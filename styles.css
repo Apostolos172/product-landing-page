@@ -1,0 +1,124 @@
+html {
+  font-size: 16px;
+}
+html body {
+  background-color: beige;
+}
+html body .row {
+  margin: 0px;
+}
+html body header {
+  display: flex;
+  flex-direction: row;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  background: inherit;
+  background-color: orangered;
+  border-bottom: 3px solid black;
+  padding-left: 10px;
+}
+html body header img {
+  max-width: 200px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body header nav {
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+html body header nav a.nav-link {
+  background-color: white;
+  background-color: beige;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  justify-content: center;
+}
+html body main.row.fluid-container {
+  margin-left: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+html body main.row.fluid-container #features h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+html body main.row.fluid-container #features ul {
+  list-style-type: circle;
+}
+html body main.row.fluid-container #how-it-works {
+  padding-bottom: 30px;
+  text-align: center;
+}
+html body main.row.fluid-container #how-it-works #carouselExampleIndicators {
+  max-height: 400px;
+  max-width: 600px;
+  margin: auto;
+}
+html body main.row.fluid-container #how-it-works #carouselExampleIndicators .carousel-item {
+  max-height: 400px;
+}
+html body main.row.fluid-container #extras {
+  padding-top: 10px;
+  border-top: 50px solid orangered;
+}
+html body footer {
+  padding: 20px;
+  background-color: orangered;
+}
+html body footer input[type=submit] {
+  background-color: beige;
+}
+html body aside {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+html body aside span:nth-child(2) {
+  display: block;
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  html body {
+    background-color: black;
+    color: white;
+  }
+  html body header nav a.nav-link {
+    background-color: black;
+    border: 1px solid white;
+    padding: 4px;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  html body aside span:nth-child(2) {
+    text-align: center;
+  }
+  html body aside span {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  html body header {
+    flex-direction: column;
+  }
+  html body header img {
+    margin: auto;
+  }
+  html body header nav {
+    flex-direction: column;
+  }
+  html body header nav a.nav-link {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */

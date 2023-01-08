@@ -1,0 +1,161 @@
+@import "variables";
+
+html {
+  font-size: 16px;
+
+  body {
+    background-color: $primary-color;
+
+    .row {
+      margin: 0px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+
+      position: sticky;
+      top: 0px;
+      z-index: 10;
+      background: inherit;
+      background-color: $secondary-color;
+      border-bottom: 3px solid black;
+      padding-left: 10px;
+
+      // box-shadow:  0px 15px 0px 0px $secondary-color;
+
+      img {
+        max-width: 200px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      nav {
+        display: flex;
+        padding: 10px;
+        width: 100%;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a.nav-link {
+          background-color: white;
+          background-color: $primary-color;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          margin: auto;
+          width: 30%;
+          // padding-left: 10%;
+          justify-content: center;
+        }
+      }
+    }
+
+    main.row.fluid-container {
+      margin-left: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      #features {
+        h1 {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+        ul {
+          list-style-type: circle;
+        }
+      }
+
+      #how-it-works {
+        padding-bottom: 30px;
+        text-align: center;
+
+        #carouselExampleIndicators {
+          max-height: 400px;
+          max-width: 600px;
+          margin: auto;
+
+          .carousel-item {
+            max-height: 400px;
+          }
+        }
+      }
+
+      #extras {
+        padding-top: 10px;
+        border-top: 50px solid $secondary-color;
+      }
+    }
+
+    footer {
+      padding: 20px;
+      background-color: $secondary-color;
+
+      input[type="submit"] {
+        background-color: $primary-color;
+      }
+    }
+
+    aside {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      span:nth-child(2) {
+        display: block;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    body {
+      background-color: black;
+      color: white;
+
+      header {
+        nav {
+          a.nav-link {
+            background-color: black;
+            border: 1px solid white;
+            padding: 4px;
+            border-left: 0px;
+            border-right: 0px;
+          }
+        }
+      }
+
+      aside {
+        span:nth-child(2) {
+          text-align: center;
+        }
+        span {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    body {
+      header {
+        flex-direction: column;
+        img {
+          margin: auto;
+        }
+
+        nav {
+          flex-direction: column;
+          a.nav-link {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

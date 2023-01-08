@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="fluid-container">
+    <!-- https://www.knipex.com/gr-gr/Προϊόντα/Πένσες-μηχανικών-και-πολυεργαλεία/Μυτοτσίμπιδα-με-�-λαγιοκόφτη-Μυτοτσίμπιδα-με-μακριά-ράμφη/μυτοτσίμπιδα-με-�-λαγιοκόφτη-μυτοτσίμπιδα-με-μακριά-ράμφη/2612200 -->
+    <!-- https://www.knipex.com/en-uk/products/combination-and-multifunctional-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/2612200 -->
+    <header id="header" class="">
+      <!-- https://www.knipex.com/sites/default/files/styles/knipex_product_detail/public/IM0007549.jpg?itok=dbuHTD_Y -->
+      <!-- <img src="./assets/logo.png" alt="tongs" id="header-img" /> -->
+      <img
+        src="https://svgsilh.com/png-512/1295566.png"
+        alt="tongs"
+        id="header-img"
+      />
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features </a>
+        <a href="#how-it-works" class="nav-link">How it works </a>
+        <a href="#extras" class="nav-link">Extras </a>
+      </nav>
+    </header>
+    <main class="row fluid-container">
+      <!-- to do automate hrefs of a links to show these parts -->
+      <div class="product-title row text-center"></div>
+      <div class="row">
+        <section id="features" class="col-sm-5">
+          <p>26 12 200</p>
+          <h1>Snipe Nose Side Cutting Pliers</h1>
+          <p>(Stork Beak Pliers)</p>
+          <hr />
+          <ul>
+            <li>Elastic tips: dimensionally stable even when twisted</li>
+            <li>Distortion-tolerant, elastic precision tips</li>
+            <li>Half-round, long, tapered jaws</li>
+            <li>With cutting edges for soft, medium-hard and hard wire</li>
+            <li>
+              Cutting edges additionally induction-hardened, cutting edge
+              hardness approx. 61 HRC
+            </li>
+            <li>Straight jaws</li>
+            <li>Vanadium electric steel, forged, multi stage oil-hardened</li>
+          </ul>
+        </section>
+
+        <section id="how-it-works" class="col-sm-7 text-center">
+          <!-- https://www.w3schools.com/bootstrap5/bootstrap_carousel.php -->
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://www.knipex.com/sites/default/files/styles/knipex_product_detail/public/IM0004703.jpg?itok=TQhkRIPY"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.knipex.com/sites/default/files/styles/knipex_product_detail/public/IM0004702.jpg?itok=DINY9GDP"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </div>
+      <section id="extras" class="row">
+        <iframe
+          class="col-sm-6"
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/dMwMpi3UEAE"
+        >
+        </iframe>
+        <iframe
+          class="col-sm-6"
+          width="420"
+          height="315"
+          id="video"
+          src="https://www.youtube.com/embed/VE9nSkYk6z8"
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer class="row text-center">
+      <p>
+        Enroll to the following form to get informed about the news of the
+        product
+      </p>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="someone@example.com"
+        />
+        <input id="submit" type="submit" value="Get started" />
+      </form>
+    </footer>
+    <aside class="row">
+      <span class="col-sm-6"
+        >Info retrieved from a random
+        <a
+          target="_blank"
+          href="https://www.knipex.com/en-uk/products/combination-and-multifunctional-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/snipe-nose-side-cutting-pliers-stork-beak-pliers/2612200"
+          >site</a
+        >
+        about these products
+      </span>
+      <span class="col-sm-6"
+        >Created by
+        <a target="_blank" href="https://github.com/Apostolos172/"
+          >Apostolos172</a
+        ></span
+      >
+    </aside>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
